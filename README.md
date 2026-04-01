@@ -1,47 +1,28 @@
-# KeyboardES_ES_Beetle_ATmega32u4
-
+KeyboardES_ES_Beetle_ATmega32u4
 Arduino HID keyboard library for Spanish (ES-ES) layout on ATmega32U4 (Beetle), with correct AltGr and symbol mapping for Windows.
+This library is functional but still under active development (work in progress).
 
-> ⚠️ This library is functional but still under active development (work in progress).
+✨ Features
+    • ✔ Full ES-ES keyboard mapping (tested on Windows) 
+    • ✔ Correct AltGr handling (@, , |, [, ], €, etc.) 
+    • ✔ Proper SHIFT symbols (! " # $ % & ( ) = ?) 
+    • ✔ Spanish-specific characters (¡, ¿, ñ, Ñ) 
+    • ✔ UTF-8 support (basic) 
+    • ✔ Stable HID timing (prevents missed keystrokes) 
 
----
+🧪 Tested Environment
+    • Windows (Spanish – Spain layout) 
+    • Arduino Micro / Beetle (ATmega32U4) 
+    • Standard text editors and browsers 
 
-## ✨ Features
+📦 Installation
+Method 1 – ZIP (recommended)
+    1. Go to the repository: https://github.com/Adineamtu/KeyboardES_ES_Beetle_ATmega32u4
+    2. Click Code → Download ZIP
+    3. In Arduino IDE:
+        ◦ Sketch → Include Library → Add .ZIP Library 
 
-- ✔ Full ES-ES keyboard mapping (tested on Windows)
-- ✔ Correct AltGr handling (@, \, |, [, ], €, etc.)
-- ✔ Proper SHIFT symbols (! " # $ % & ( ) = ?)
-- ✔ Spanish-specific characters (¡, ¿, ñ, Ñ)
-- ✔ UTF-8 support (basic)
-- ✔ Stable HID timing (prevents missed keystrokes)
-
----
-
-## 🧪 Tested Environment
-
-- Windows (Spanish – Spain layout)
-- Arduino Micro / Beetle (ATmega32U4)
-- Standard text editors and browsers
-
----
-
-## 📦 Installation
-
-### Method 1 – ZIP (recommended)
-
-1. Go to the repository:
-   https://github.com/Adineamtu/KeyboardES_ES_Beetle_ATmega32u4
-
-2. Click **Code → Download ZIP**
-
-3. In Arduino IDE:
-   - Sketch → Include Library → Add .ZIP Library
-
----
-
-## 🚀 Usage
-
-~~~cpp
+🚀 Usage
 #include <KeyboardES_ES_Beetle.h>
 
 void setup() {
@@ -57,13 +38,13 @@ void setup() {
 void loop() {}
 
 
-🧪 Example (Full Test)
+離 Example (Full Test)
 
 See:
 examples/BasicTest/BasicTest.ino
 
 
-📌 Expected Output
+ Expected Output
 
 @ / \ | €
 [ ]
