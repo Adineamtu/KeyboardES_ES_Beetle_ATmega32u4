@@ -55,3 +55,35 @@ void setup() {
 }
 
 void loop() {}
+
+🧪 Example (Full Test)
+
+See:
+examples/BasicTest/BasicTest.ino
+
+
+📌 Expected Output
+
+@ / \ | €
+[ ]
+! " # $ % & ( ) = ?
+¡ ¿
+mail: prueba@test.com
+web: https://www.google.com
+
+⚠️ Notes
+Designed for Spanish (Spain) keyboard layout on Windows
+Other layouts may produce different results
+Timing delays are important for correct HID behavior
+
+🚧 Limitations
+Not fully tested on Linux/macOS
+UTF-8 support is basic
+Some edge-case key combinations may require adjustment
+
+🤝 Contributions
+
+Contributions, fixes and improvements are welcome!
+
+📜 License
+MIT License
