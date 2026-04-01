@@ -41,7 +41,7 @@ Arduino HID keyboard library for Spanish (ES-ES) layout on ATmega32U4 (Beetle), 
 
 ## 🚀 Usage
 
-```cpp
+~~~cpp
 #include <KeyboardES_ES_Beetle.h>
 
 void setup() {
