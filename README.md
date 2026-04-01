@@ -2,20 +2,22 @@
 
 Arduino HID keyboard library for Spanish (ES-ES) layout on ATmega32U4 (Beetle), with correct AltGr and symbol mapping for Windows.
 
+> ⚠️ This library is functional but still under active development (work in progress).
+
 ---
 
 ## ✨ Features
 
 - ✔ Full ES-ES keyboard mapping (tested on Windows)
-- ✔ Correct AltGr handling (`@`, `\`, `|`, `[ ]`, `€`)
-- ✔ Proper SHIFT symbols (`! " # $ % & ( ) = ?`)
-- ✔ Spanish-specific characters (`¡`, `¿`, `ñ`, `Ñ`)
+- ✔ Correct AltGr handling (@, \, |, [, ], €, etc.)
+- ✔ Proper SHIFT symbols (! " # $ % & ( ) = ?)
+- ✔ Spanish-specific characters (¡, ¿, ñ, Ñ)
 - ✔ UTF-8 support (basic)
 - ✔ Stable HID timing (prevents missed keystrokes)
 
 ---
 
-## ⚙️ Tested Environment
+## 🧪 Tested Environment
 
 - Windows (Spanish – Spain layout)
 - Arduino Micro / Beetle (ATmega32U4)
@@ -23,64 +25,33 @@ Arduino HID keyboard library for Spanish (ES-ES) layout on ATmega32U4 (Beetle), 
 
 ---
 
-## 🚀 Installation
+## 📦 Installation
 
-1. Download or clone the repository
-2. Copy the `src/` folder into your Arduino project  
-   OR install as a custom library
+### Method 1 – ZIP (recommended)
+
+1. Go to the repository:
+   https://github.com/Adineamtu/KeyboardES_ES_Beetle_ATmega32u4
+
+2. Click **Code → Download ZIP**
+
+3. In Arduino IDE:
+   - Sketch → Include Library → Add .ZIP Library
 
 ---
 
-## 📦 Usage
+## 🚀 Usage
 
 ```cpp
 #include <KeyboardES_ES_Beetle.h>
 
 void setup() {
-  delay(4000);
+  delay(3000);
   KeyboardES_ES_Beetle::begin();
 
   KeyboardES_ES_Beetle::printlnES("Hola mundo!");
-  KeyboardES_ES_Beetle::printlnES("mail: prueba@test.com");
-  KeyboardES_ES_Beetle::printlnES("web: https://www.google.com");
+  KeyboardES_ES_Beetle::printlnES("@ / \\ | €");
 
   KeyboardES_ES_Beetle::end();
 }
 
 void loop() {}
-
-🧪 Example (Full Test)
-KeyboardES_ES_Beetle::printlnES("@ / \\ |");
-KeyboardES_ES_Beetle::printlnES("[ ]");
-KeyboardES_ES_Beetle::printlnES("! \" # $ % & ( ) = ?");
-KeyboardES_ES_Beetle::printlnES("¡ ¿");
-
-Expected output:
-
-@ / \ |
-[ ]
-! " # $ % & ( ) = ?
-¡ ¿
-
-
-⚠️ Notes
-
-This library is designed for Spanish (Spain) layout only
-Other layouts (e.g. Latin America) may require adjustments
-HID keycodes may vary slightly across systems
-
-🔧 Limitations
-
-Accented vowels (á é í ó ú) not fully implemented yet
-Some advanced symbols may need additional mapping
-
-🤝 Contributions
-
-Contributions, fixes and improvements are welcome.
-
-📜 License
-
-MIT License
-
-
-
