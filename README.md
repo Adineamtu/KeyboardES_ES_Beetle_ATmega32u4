@@ -61,17 +61,24 @@ Expected output:
 [ ]
 ! " # $ % & ( ) = ?
 ¡ ¿
-⚠️ Notes
+
+
+## ⚠️ Notes
 This library is designed for Spanish (Spain) layout only
 Other layouts (e.g. Latin America) may require adjustments
 HID keycodes may vary slightly across systems
-🔧 Limitations
+
+
+## 🔧 Limitations
 Accented vowels (á é í ó ú) not fully implemented yet
 Some advanced symbols may need additional mapping
-🤝 Contributions
+
+
+## 🤝 Contributions
 
 Contributions, fixes and improvements are welcome.
 
-📜 License
+
+## 📜 License
 
 MIT License
