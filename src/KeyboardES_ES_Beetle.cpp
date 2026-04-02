@@ -116,6 +116,7 @@ bool KeyboardES_ES_Beetle::typeAscii(char c) {
     // basic punctuation
     case '\'': tap(45); return true;
     case ',': tap(54); return true;
+    case ';': tap(54, KEY_LEFT_SHIFT); return true;
     case '.': tap(55); return true;
     case '-': tap(56); return true;
 
