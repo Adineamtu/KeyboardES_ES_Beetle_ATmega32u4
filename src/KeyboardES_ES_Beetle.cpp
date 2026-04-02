@@ -224,6 +224,7 @@ void KeyboardES_ES_Beetle::printES(const char* text) {
     // fallback: spațiu pentru caracter necunoscut
     tap(44);
     i += 1;
+    continue;
   }
 }
 
