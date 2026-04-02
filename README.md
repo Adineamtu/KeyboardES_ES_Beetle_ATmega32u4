@@ -1,7 +1,8 @@
 # KeyboardES_ES_Beetle_ATmega32u4
 
 Arduino HID keyboard library for Spanish (ES-ES) layout on ATmega32U4 (Beetle), with correct AltGr and symbol mapping for Windows.
-
+## ⚠️ Limitations
+- Backtick (`) is NOT supported (not present on Spanish keyboard layout ES)
 > ⚠️ This library is functional but still under active development (work in progress).
 
 ---
