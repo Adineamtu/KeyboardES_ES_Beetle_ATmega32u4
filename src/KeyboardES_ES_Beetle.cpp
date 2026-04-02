@@ -113,17 +113,17 @@ bool KeyboardES_ES_Beetle::typeAscii(char c) {
     case '\n': tap(40); return true;
     case '\t': tap(43); return true;
 
-    // punctuation de bază
+    // basic punctuation
     case '\'': tap(45); return true;
-    case ',':  tap(54); return true;
-    case '.':  tap(55); return true;
-    case '-':  tap(56); return true;
+    case ',': tap(54); return true;
+    case '.': tap(55); return true;
+    case '-': tap(56); return true;
 
-    // simboluri spaniole dedicate
+    // Spanish specific
     case '¡': tap(46); return true;
     case '¿': tap(46, KEY_LEFT_SHIFT); return true;
 
-    // SHIFT
+    // SHIFT symbols
     case '!': tap(30, KEY_LEFT_SHIFT); return true;
     case '"': tap(31, KEY_LEFT_SHIFT); return true;
     case '$': tap(33, KEY_LEFT_SHIFT); return true;
@@ -136,14 +136,27 @@ bool KeyboardES_ES_Beetle::typeAscii(char c) {
     case '?': tap(45, KEY_LEFT_SHIFT); return true;
     case ':': tap(55, KEY_LEFT_SHIFT); return true;
 
-    // AltGr
-    case '@':  tap(31, KEY_RIGHT_ALT); return true;   // AltGr + 2
-    case '#':  tap(32, KEY_RIGHT_ALT); return true;   // AltGr + 3
-    case '€':  tap(8,  KEY_RIGHT_ALT); return true;   // AltGr + E
-    case '|':  tap(30, KEY_RIGHT_ALT); return true;   // AltGr + 1
-    case '\\': tap(53, KEY_RIGHT_ALT); return true;   // AltGr + tasta º (calibrat)
-    case '[':  tap(47, KEY_RIGHT_ALT); return true;
-    case ']':  tap(48, KEY_RIGHT_ALT); return true;
+    // ALTGR
+    case '@': tap(31, KEY_RIGHT_ALT); return true;    // AltGr + 2
+    case '#': tap(32, KEY_RIGHT_ALT); return true;    // AltGr + 3
+    case '€': tap(8, KEY_RIGHT_ALT); return true;     // AltGr + E
+    case '|': tap(30, KEY_RIGHT_ALT); return true;    // AltGr + 1
+    case '\\': tap(53, KEY_RIGHT_ALT); return true;
+
+    // brackets
+    case '[': tap(47, KEY_RIGHT_ALT); return true;
+    case ']': tap(48, KEY_RIGHT_ALT); return true;
+
+    // underscore _
+    case '_': tap(56, KEY_LEFT_SHIFT); return true;
+
+    // curly braces
+    case '{': tap(52, KEY_RIGHT_ALT); return true;
+    case '}': tap(49, KEY_RIGHT_ALT); return true;
+
+    // backtick `
+    case '`':
+      return false;
 
     default:
       return false;
