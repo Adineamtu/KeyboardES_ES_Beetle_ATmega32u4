@@ -116,7 +116,6 @@ bool KeyboardES_ES_Beetle::typeAscii(char c) {
     // basic punctuation
     case '\'': tap(45); return true;
     case ',': tap(54); return true;
-    case ';': tap(54, KEY_LEFT_SHIFT); return true;
     case '.': tap(55); return true;
     case '-': tap(56); return true;
 
@@ -136,6 +135,7 @@ bool KeyboardES_ES_Beetle::typeAscii(char c) {
     case '=': tap(39, KEY_LEFT_SHIFT); return true;   // Shift + 0
     case '?': tap(45, KEY_LEFT_SHIFT); return true;
     case ':': tap(55, KEY_LEFT_SHIFT); return true;
+    case ';': tap(54, KEY_LEFT_SHIFT); return true;
 
     // ALTGR
     case '@': tap(31, KEY_RIGHT_ALT); return true;    // AltGr + 2
